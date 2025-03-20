@@ -7,7 +7,7 @@
     <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
     <link rel="stylesheet" href="css/main.css" />
     <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/logo-2.png" type="image/x-icon" />
     <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
     <link
       rel="stylesheet"
@@ -29,8 +29,43 @@
   </head>
   <body>
     <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
-    <header>
-      
+    <header id="navbar" class="sticky top-0 z-50 duration-300">
+      <nav class="relative container flex justify-between items-center">
+        <div class="py-5">
+          <a href="/"><img src="images/logo-2.png" alt="logo" id="logo" class="w-10 md:w-14"></a>
+          <a href="/"><img src="images/logo_white.png" alt="logo_white" id="logo_white" class="w-10 hidden md:w-14"></a>
+        </div>
+
+        <div id="nav-menu" class="hidden absolute top-0 left-0 bg-primaryColor
+        w-full py-24 lg:block lg:bg-transparent lg:static lg:py-0 lg:border-none
+        lg:w-auto lg:ml-auto">
+          <ul class="flex flex-col items-center text-center gap-8 lg:flex-row lg:gap-5">
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#works" class="nav-link">Works</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#blogs" class="nav-link">Blogs</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+              <button class="btn ml-100">
+                <span class="z-10">Hire Me!</span>
+              </button>
+            </li>
+          </ul>
+
+          <div id="nav-close" class="absolute top-6 right-3 md:right-8 text-whiteColor text-3xl cursor-pointer lg:hidden">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-5">
+          <i class="ri-moon-line cursor-pointer ml-4 text-2xl" id="theme-toggle"></i>
+          
+          <div id="hamburger" class="lg:hidden">
+            <i class="ri-menu-2-line cursor-pointer ml-4 text-2xl"></i>
+          </div>
+        </div>
+      </nav>            
     </header>
 
     <main>
@@ -84,6 +119,8 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     
     <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
+
+
   </body>
 </html>

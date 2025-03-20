@@ -1,6 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+    html{
+        @apply scroll-smooth;
+    }
+
+    body{
+        @apply dark:bg-darkBodyColor dark:text-textColor text-primaryColor
+        font-poppins tracking-wider overflow-x-hidden;
+    }
+}
+
+@layer components {
+    .nav-link{
+        @apply relative font-bold;
+    }
+
+    .nav-link::before {
+        @apply content-[''] absolute w-full h-[2px] bg-gradient-to-r
+        from-primaryColorLight to-primaryColor -bottom-[5px] left-0 scale-x-0
+        transition-transform ease-in-out origin-right duration-500;
+    }
+
+    .nav-link:hover::before {
+        @apply scale-x-100 origin-left;
+    }
+    
+    .btn {
+        @apply relative overflow-hidden bg-gradient-to-r
+        from-primaryColorLight to-primaryColor text-whiteColor px-7 py-3
+        rounded-full capitalize font-bold flex justify-center items-center;
+    }
+     .btn::before{
+        @apply content-[''] absolute w-[100%] h-[100%] bg-gradient-to-r
+        from-primaryColor to-primaryColorLight top-0 left-0 rounded-full
+        scale-x-0 transition-transform ease-in-out origin-right duration-300
+     }
+
+     .btn:hover::before{
+        @apply scale-x-100 origin-left;
+     }
+}
