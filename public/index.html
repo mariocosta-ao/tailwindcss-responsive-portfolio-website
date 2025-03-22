@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css"
+      integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Mario Costa || Portfolio Website</title>
+  </head>
+  <body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header id="navbar" class="sticky top-0 z-50 duration-300">
+      <nav class="relative container flex justify-between items-center">
+        <div class="py-5">
+          <a href="/"><img src="./assets/images/logo-2.png" alt="logo" id="logo" class="w-10 md:w-14"></a>
+          <a href="/"><img src="./assets/images/logo_white.png" alt="logo_white" id="logo_white" class="w-10 hidden md:w-14"></a>
+        </div>
+
+        <div id="nav-menu" class="hidden absolute top-0 left-0 bg-primaryColor
+        w-full py-24 lg:block lg:bg-transparent lg:static lg:py-0 lg:border-none
+        lg:w-auto lg:ml-auto">
+          <ul class="flex flex-col items-center text-center gap-8 lg:flex-row lg:gap-5">
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#works" class="nav-link">Works</a></li>
+            <li><a href="#resume" class="nav-link">Resume</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#blogs" class="nav-link">Blogs</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li>
+              <button class="btn ml-100">
+                <span class="z-10">Hire Me!</span>
+              </button>
+            </li>
+          </ul>
+
+          <div id="nav-close" class="absolute top-6 right-3 md:right-8 text-whiteColor text-3xl cursor-pointer lg:hidden">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        
+        <div class="flex items-center gap-5">
+          <i class="ri-moon-line cursor-pointer ml-4 text-2xl" id="theme-toggle"></i>
+          
+          <div id="hamburger" class="lg:hidden">
+            <i class="ri-menu-2-line cursor-pointer ml-4 text-2xl"></i>
+          </div>
+        </div>
+      </nav>            
+    </header>
+
+    <main>
+      <!--~~~~~~~~~~~~~~~ Hero Section ~~~~~~~~~~~~~~~-->
+      <section id="hero" class=" relative py-5">
+          <!-- blob-->
+           <div class="absolute right-0 top-[-20%] w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+
+           <div class="container">
+              <!-- bg image -->
+               <div class="hidden md:block absolute top-0 left-[30%] lg:left[35%] animate-scaleAnimation">
+                <p class="font-Londrina text-[400px] lg:text-[450px] text-primaryColorLight uppercase -z-10 opacity-5">Hi</p>
+               </div>
+
+               <!-- hero content -->
+                <div class=" flex items-center gap-5">
+                  <div class="space-y-2 md:w-1/2">
+                    <h3 class="text-2xl md:text-2xl lg:text-3xl font-bold">I am Mário Costa</h3>
+                    <h1>
+                      <span class="title">Web Developer +</span>
+                      <br>
+                      <span class="title">IT Specialist</span>
+                    </h1>
+
+                    <div class="relative flex justify-center md:hidden">
+                      <!-- blob -->
+                       <div class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+
+                       <img src="./assets/images/person.jpg" alt="person" class="my-10 max-w-[90%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:border-primaryColorLight">
+                    </div>
+
+                    <p class="max-w-xl text-xl pb-5">I dissect intricate user experience issues to craft solutions focused on integrity, linking billions of individuals.</p>
+
+                    <div class="flex items-center flex-wrap gap-5">
+                      <button class="btn_outline">
+                        Download CV <i class="fa-solid fa-download"></i>
+                      </button>
+
+                      <div class="flex items-center gap-5">
+                        <div class="social-icon"><i class="fa-brands fa-facebook z-10"></i></div>
+                        <div class="social-icon"><i class="fa-brands fa-linkedin z-10"></i></div>
+                        <div class="social-icon"><i class="fa-brands fa-instagram z-10"></i></div>
+                        <div class="social-icon"><i class="fa-brands fa-github z-10"></i></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="relative hidden md:w-1/2 md:flex justify-center">
+                    <!-- hero image -->
+                     <div class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50"></div>
+
+                     <img src="./assets/images/person.jpg" alt="person" class="my-10 md:w-full lg:max-w-[80%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:border-primaryColorLight">
+                  </div>
+
+                </div>
+
+               <!-- hero footer -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
+                  <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">12</p>
+                    <p>Years of <br> Experience</p>
+                  </div>
+
+                  <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">20+</p>
+                    <p>Project <br> Completed</p>
+                  </div>
+
+                  <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">1.5k</p>
+                    <p>Happy <br> Clients</p>
+                  </div>
+
+                  <div class="flex items-center gap-3">
+                    <p class="text-5xl lg:text-6xl font-bold">12</p>
+                    <p>Years of <br> Experience</p>
+                  </div>
+                </div>
+
+           </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ My Quality Services ~~~~~~~~~~~~~~~-->
+      <section id="services" class="bg-sectionColor dark:bg-darkSectionColor">
+        <div class="container">
+          <div class="flex flex-col items-center gap-5 text-center">
+            <h2 class="subtitle">My Quality Services</h2>
+              <p class="max-w-2xl">We transform your ideas and desires into a distinctive web project that inspires both you and your customers.</p>
+          </div>
+  
+          <!-- list section-->
+          <div class="my-10">
+
+             <!-- item 1 -->
+            <div class="service_item">
+              <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                <p class="text-primaryColorLight hover:text-whiteColor">01</p>
+                <p>Branding Design</p>
+              </div>
+  
+              <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+  
+              <div class="md:max-w-[300px] lg:max-w-md xl:max-w-lg">
+                <p>I dissect complex user experience challenges to devise solutions that prioritize integrity.</p>
+              </div>
+            </div>
+
+             <!-- item 2 -->
+             <div class="service_item">
+              <div class="text-xl font-bold flex items-center gap-3  md:text-2xl md:w-[40%]">
+                <p class="text-primaryColorLight hover:text-whiteColor">02</p>
+                <p>Web Design</p>
+              </div>
+  
+              <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                <i class="fa-solid fa-arrow-right-long"></i>
+              </div>
+  
+              <div class="md:max-w-[300px] lg:max-w-md xl:max-w-lg">
+                <p>I dissect complex user experience challenges to devise solutions that prioritize integrity.</p>
+              </div>
+            </div>
+
+            <!-- item 3 -->
+            <div class="service_item">
+            <div class="text-xl font-bold flex items-center gap-3  md:text-2xl md:w-[40%]">
+              <p class="text-primaryColorLight hover:text-whiteColor">03</p>
+              <p>UI/UX Design</p>
+            </div>
+
+            <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+              <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+
+            <div class="md:max-w-[300px] lg:max-w-md xl:max-w-lg">
+              <p>I dissect complex user experience challenges to devise solutions that prioritize integrity.</p>
+            </div>
+            </div>
+
+            <!-- item 4 -->
+            <div class="service_item">
+            <div class="text-xl font-bold flex items-center gap-3  md:text-2xl md:w-[40%]">
+            <p class="text-primaryColorLight hover:text-whiteColor">04</p>
+            <p>Graphics Design</p>
+            </div>
+
+            <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+            <i class="fa-solid fa-arrow-right-long"></i>
+            </div>
+
+            <div class="md:max-w-[300px] lg:max-w-md xl:max-w-lg">
+            <p>I dissect complex user experience challenges to devise solutions that prioritize integrity.</p>
+            </div>
+            </div>
+
+           </div>
+        </div>
+      </section>
+
+      <!--~~~~~~~~~~~~~~~ My Recent Works ~~~~~~~~~~~~~~~-->
+      <section>
+
+      </section>
+      
+      <!--~~~~~~~~~~~~~~~ Experience & Education ~~~~~~~~~~~~~~~-->
+      <section>
+
+      </section>
+      
+
+      <!--~~~~~~~~~~~~~~~ My Skills ~~~~~~~~~~~~~~~-->
+      <section>
+
+      </section>
+      
+
+      <!--~~~~~~~~~~~~~~~ Recent Blogs ~~~~~~~~~~~~~~~-->
+      <section>
+
+      </section>
+      
+
+      <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
+      <section>
+
+      </section>
+      
+    </main>
+
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer>
+
+    </footer>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~ -->
+
+    <a href="#" >
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+    <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+    <script src="./assets/js/main.js" defer></script>
+
+
+  </body>
+</html>
