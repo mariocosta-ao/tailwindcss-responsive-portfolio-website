@@ -53,8 +53,13 @@
         @apply border border-primaryColorLight text-primaryColorLight py-4 px-9 rounded-full hover:bg-primaryColorLight hover:text-whiteColor duration-300;
      }
 
-     .title{
-        @apply text-4xl lg:text-6xl xl:text-[65px] font-bold bg-gradient-to-r from-primaryColorLight to-primaryColor dark:to-whiteColor inline-block text-transparent bg-clip-text pb-2;
+     .title,
+     .subtitle{
+        @apply text-4xl lg:text-5xl xl:text-[65px] font-bold bg-gradient-to-r from-primaryColorLight to-primaryColor dark:to-whiteColor inline-block text-transparent bg-clip-text pb-2;
+     }
+
+     .subtitle{
+        @apply text-3xl md:text-4xl lg:text-5xl;
      }
 }
 
@@ -70,5 +75,25 @@
 
     .social-icon:hover::before{
         @apply scale-100 origin-center;
+    }
+
+    /*My Quality Services*/
+    .service_item{
+        @apply flex flex-wrap items-center gap-3 px-4 py-8 border-b border-primaryColorLight hover:bg-primaryColorLight cursor-pointer duration-300;
+    }
+
+    .service_item div p{
+        @apply duration-300;
+    }
+    .service_item:hover div p{
+        @apply text-whiteColor;
+    }
+
+    .service_item div i{
+        @apply duration-300;
+    }
+
+    .service_item:hover div i{
+        @apply text-whiteColor -rotate-90;
     }
 }
