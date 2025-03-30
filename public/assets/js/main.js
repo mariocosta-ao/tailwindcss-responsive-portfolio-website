@@ -50,6 +50,53 @@ function lightMode(){
 }
 
 /*~~~~~~~~~~~~~~~ TABS ~~~~~~~~~~~~~~~*/
+let tabs = document.querySelectorAll('.tab');
+let indicator = document.querySelector('.indicator'); // Pegamos apenas 1 indicador
+const all = document.querySelectorAll(".work_card");
+const uiuxs = document.querySelectorAll(".uiux");
+const apps = document.querySelectorAll(".app");
+const brandings = document.querySelectorAll(".branding")
+
+// Definir a posição inicial do indicador
+indicator.style.width = tabs[0].getBoundingClientRect().width + "px";
+indicator.style.left = (tabs[0].getBoundingClientRect().left - tabs[0].parentElement.getBoundingClientRect().left) + "px";
+
+// Adicionar evento de clique para mover o indicador
+tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+        indicator.style.width = tab.getBoundingClientRect().width + "px";
+        indicator.style.left = tab.getBoundingClientRect().left - tab.parentElement.getBoundingClientRect().left + "px";
+
+        tabs.forEach(t => t.classList.remove("text-whiteColor"));
+        tab.classList.add("text-whiteColor");
+
+        const tabval = tab.getAttribute("data-tabs");
+
+        all.forEach(item => {
+            item.style.display = "none"
+        });
+
+        if(tabval == "uiux"){
+            uiuxs.forEach(item => {
+                item.style.display = "block"
+            });
+        } else if(tabval == "branding"){
+            brandings.forEach(item => {
+                item.style.display = "block"
+            });
+        } else if(tabval == "app"){
+            apps.forEach(item => {
+                item.style.display = "block"
+            });
+        } else{
+            all.forEach(item => {
+                item.style.display = "block"
+            });
+        }
+    });
+
+});
+
 
 /*~~~~~~~~~~~~~~~ CHANGE BACKGROUND HEADER ~~~~~~~~~~~~~~~*/
 

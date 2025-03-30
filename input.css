@@ -96,4 +96,22 @@
     .service_item:hover div i{
         @apply text-whiteColor -rotate-90;
     }
+
+    /* My Recent Works*/
+    .indicator{
+        transition: left 0.4s;
+    }
+
+    .work_card > div{
+        @apply duration-500;
+    }
+    .work_card:hover > div{
+        @apply bottom-0;
+    }
+    .work_card div i{
+        @apply duration-300 delay-300;
+    }
+    .work_card:hover > div i{
+        @apply -rotate-90;
+    }
 }
