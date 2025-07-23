@@ -4,3 +4,4 @@ package-lock.json
 .git/
 .gitignore
 *.Identifier
+*.mp4
